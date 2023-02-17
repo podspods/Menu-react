@@ -22,19 +22,15 @@ export const AppTheme = {
     Logo: "Sora,sans-serif",
   },
   BorderRadius: "0.6rem",
-
-
 };
 
 export const App = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   text-align: center;
   align-items: center;
 `;
-
-
 
 /**
  * Contient le style globale de l'application
@@ -56,6 +52,17 @@ export const AppGlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
-
-  
+  .hide{
+    display: none;
+  }
 `;
+
+
+
+export const MenuBurger = styled.div`
+  position : absolute;
+  bottom: 0rem;
+  left: 0rem;
+  cursor: pointer;
+
+`
